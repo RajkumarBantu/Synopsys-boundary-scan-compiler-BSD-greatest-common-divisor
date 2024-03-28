@@ -1,0 +1,1 @@
+# ynopsys-boundary-scan-compiler-BSD-greatest-common-divisor
