@@ -1,0 +1,76 @@
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  	...checking for scan equivalents...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+  ...saving simulation value info...
+
+-----------------------------------------------------------------
+Begin Pre-DFT violations...
+
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/TOFSM/cState_reg[0]. (D10-1)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/TOFSM/cState_reg[1]. (D10-2)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/TOFSM/cState_reg[2]. (D10-3)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/X_REG/output_reg[3]. (D10-4)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/X_REG/output_reg[2]. (D10-5)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/X_REG/output_reg[1]. (D10-6)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/X_REG/output_reg[0]. (D10-7)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/OUT_REG/output_reg[3]. (D10-8)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/OUT_REG/output_reg[2]. (D10-9)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/OUT_REG/output_reg[1]. (D10-10)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/OUT_REG/output_reg[0]. (D10-11)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/Y_REG/output_reg[3]. (D10-12)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/Y_REG/output_reg[2]. (D10-13)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/Y_REG/output_reg[1]. (D10-14)
+ Warning: Clock rst connects to data input (D) of DFF M_GCD/Y_REG/output_reg[0]. (D10-15)
+
+Pre-DFT violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 15
+
+-----------------------------------------------------------------
+
+15 PRE-DFT VIOLATIONS
+    15 Clock feeding data input violations (D10)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 15 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *  15 cells are valid scan cells
+         M_GCD/TOFSM/cState_reg[0]
+         M_GCD/TOFSM/cState_reg[1]
+         M_GCD/TOFSM/cState_reg[2]
+         M_GCD/X_REG/output_reg[3]
+         M_GCD/X_REG/output_reg[2]
+         M_GCD/X_REG/output_reg[1]
+         M_GCD/X_REG/output_reg[0]
+         M_GCD/OUT_REG/output_reg[3]
+         M_GCD/OUT_REG/output_reg[2]
+         M_GCD/OUT_REG/output_reg[1]
+         M_GCD/OUT_REG/output_reg[0]
+         M_GCD/Y_REG/output_reg[3]
+         M_GCD/Y_REG/output_reg[2]
+         M_GCD/Y_REG/output_reg[1]
+         M_GCD/Y_REG/output_reg[0]
+
+Information: Test design rule checking completed. (TEST-123)
+Current design is 'gcd_bsd'.
+Current design is 'gcd_bsd'.
+1
